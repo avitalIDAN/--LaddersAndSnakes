@@ -56,7 +56,7 @@ class BoardModel{
         for(let ladder of Ladders){
             let cell1 = this.listCells.find(c=>{
                 return c.numberToShow==ladder[0];
-            }) //[ladder[0]];
+            })
             cell1.jumpTo = ladder[1];
             let cell2 = this.listCells.find(c=>{
                 return c.numberToShow==ladder[1];

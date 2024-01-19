@@ -3,7 +3,7 @@ import zim from "https://zimjs.org/cdn/015/zim";
 
 const moveGlobal = 50;
 let finish = false;
-// Create an instance of MyClass
+
 function showMassage(S, massage, size,  color="white"){
     const victoryText = new Label(massage, size, "Arial", color)
     .centerReg()
@@ -105,7 +105,6 @@ function placeToken(token, size, W, S, isAnimate = false, jumpTo = 0){
 
 }
 function placeDice(size, S, W, H){
-    // Dice:
     let buttonDice = new Button(2*size, 2*size, "1")
     .loc(W-5*moveGlobal, H-5*moveGlobal, S);
     buttonDice.on("click", () => {
